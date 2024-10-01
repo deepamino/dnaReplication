@@ -8,3 +8,5 @@ class DNA:
         self.comp = DNA.dna_utils.get_complementary_strand(dna)
         self.nucleotides = len(dna)
     
+    def show_nucleotides(self):
+        print(f"Number of nucleotides: {self.nucleotides}")

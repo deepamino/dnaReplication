@@ -9,4 +9,7 @@ class DNAUtils:
         complementary_strand = ''
         for base in dna:
             complementary_strand += DNAUtils.nitro_bases[base]
-        return complementary_strandS
+        return complementary_strand
+
+    def test_dna(self, dna1, dna2):
+        return dna1 == dna2

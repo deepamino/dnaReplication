@@ -1,4 +1,4 @@
-import random
+import random,time
 
 class Helicase:
 
@@ -16,6 +16,7 @@ class Orchestrator:
         self.helicases = []
 
     def define_helicases(self):
+        
         helicase_positions = [self.nucleotides // self.number_of_helicases * i for i in range(1, self.number_of_helicases)]
         helicase_positions.insert(0, 0)
 
@@ -28,8 +29,18 @@ class Orchestrator:
         helicase_positions.append(self.nucleotides)
         for i in range(0, len(helicase_positions)-1):
             self.helicases.append(Helicase(helicase_positions[i], helicase_positions[i+1]))
+        
+        print("Helicases bind to the DNA strand and unwind the double helix at the positions:", self.get_helicases_positions())
+        time.sleep(1)
     
     def get_Helicase(self, index):
         return self.helicases[index]
 
+    def show_number_of_helicases(self):
+        print(f"Number of helicases: {self.number_of_helicases}")
+        print("----------------------------------------------------------------------------------------------------")
+        time.sleep(1)
+    
+    def get_helicases_positions(self):
+        return [h.start for h in self.helicases]
     
