@@ -20,3 +20,4 @@ The project is divided into several modules to organise the code in a way that c
 - **polymerase.py**: Defines the Polymerase class, which contains the methods for replicating the leading and lagging strands, and the PolymeraseOrchestrator class, which coordinates the entire replication process for both strands.
 - **replication.py**: Controls the execution of the complete replication process using the classes and functions defined in the previous modules.
 - **replication.ipynb**: A Jupyter Notebook that runs the complete simulation process, allowing file input and output, and displaying the replication flow.
+![uml_scheme](./images/uml_eschem.png)
