@@ -7,7 +7,7 @@ class Helicase:
         self.end = end
 
     
-class Orchestrator:
+class HelicaseOrchestrator:
 
     def __init__(self, dna, rate=0.25):
         self.nucleotides = dna.nucleotides

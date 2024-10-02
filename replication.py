@@ -1,12 +1,11 @@
-from helicase import Helicase, Orchestrator
+from helicase import HelicaseOrchestrator
 from polymerase import PolymeraseOrchestrator
-import time
 
 
 class Replication:
 
     def execute(self, dna, rate=0.25):
-        helicase_orchestrator = Orchestrator(dna, rate)
+        helicase_orchestrator = HelicaseOrchestrator(dna, rate)
         helicase_orchestrator.show_number_of_helicases()
         helicase_orchestrator.define_helicases()
     
