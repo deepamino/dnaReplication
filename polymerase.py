@@ -77,7 +77,7 @@ class PolymeraseOrchestrator:
             for i in range(total_helicase):
                 lagging_primer_positions = []
                 fragment_lenght = helicase_positions[i+1] - helicase_positions[i]
-                num_of_fragments = random.randint(total_helicase, fragment_lenght // self.scale)
+                num_of_fragments = random.randint((fragment_lenght - fragment_lenght/2) // self.scale, fragment_lenght // self.scale)
                 okazaki_length = fragment_lenght // num_of_fragments
 
                 for j in range(num_of_fragments):

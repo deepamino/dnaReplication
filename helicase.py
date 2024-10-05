@@ -9,10 +9,10 @@ class Helicase:
     
 class HelicaseOrchestrator:
 
-    def __init__(self, dna, rate=0.25):
+    def __init__(self, dna, rate=0.005):
         self.nucleotides = dna.nucleotides
         self.rate = rate
-        self.number_of_helicases = self.nucleotides // int(self.rate * self.nucleotides)
+        self.number_of_helicases = int(self.rate * self.nucleotides)
         self.helicases = []
 
     def define_helicases(self):
