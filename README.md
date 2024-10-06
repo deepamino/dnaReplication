@@ -2,6 +2,8 @@
 
 This project is a simulation of the DNA replication process prior to mitosis or meiosis, implemented in Python. The program simulates the complete process of DNA replication, including the key stages of the work of enzymes such as helicase and DNA polymerase, the creation of the leading and lagging strand (using Okazaki fragments).
 
+<p align="center"><img src="./images/animation.gif" width="500" /></p>
+
 ## 1. Description of the Process
 The process of DNA replication involves duplicating a DNA molecule so that each daughter cell obtains a complete copy of the genetic material. In this simulation, DNA is modelled as a sequence of nucleotides, and the replication process is carried out, which includes the following steps:
 1. **Separation of the DNA strands** by the enzyme **helicase**, which unwinds the DNA double helix.
