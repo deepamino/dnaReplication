@@ -1,5 +1,5 @@
-from helicase import HelicaseOrchestrator
-from polymerase import PolymeraseOrchestrator
+from replication.helicase import HelicaseOrchestrator
+from replication.polymerase import PolymeraseOrchestrator
 
 
 class Replication:

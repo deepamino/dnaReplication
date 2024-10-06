@@ -1,4 +1,4 @@
-from dna_utils import DNAUtils
+from replication.dna_utils import DNAUtils
 import random, time
 
 class Polymerase:
