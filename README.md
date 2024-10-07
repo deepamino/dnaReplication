@@ -49,7 +49,7 @@ If both comparisons are correct, the replication process is successful.
 To use this simulation, we have released an API that can either previously replicated data (using chromosome IDs)  or replicate new sequences via a POST method. To obtain a replicated sample:
 
 ```bash
-curl -X POST http://localhost:5000/replica -d '{"id": "[chr. id]"}'
+curl -X GET http://localhost:5000/replica -d '{"id": "[chr. id]"}'
 ```
 
 To replicate a new sequence, you can use the following command:
