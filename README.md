@@ -44,7 +44,21 @@ At the end of the process, the generated daughter strands are checked:
 
 If both comparisons are correct, the replication process is successful.
 
-## 5. Credits
+## 5. How to use
+
+To use this simulation, we have released an API that can either previously replicated data (using chromosome IDs)  or replicate new sequences via a POST method. To obtain a replicated sample:
+
+```bash
+curl -X POST http://localhost:5000/replica -d '{"id": "[chr. id]"}'
+```
+
+To replicate a new sequence, you can use the following command:
+
+```bash
+curl -X POST http://localhost:5000/dna -d '{"sequence": "[sequence]"}'
+```
+
+## 6. Credits
 This study was carried out by Ricardo Cárdenes Pérez and Susana Suárez Mendoza as part of an internship for the Bioinformatics course taught in the Data Science and Engineering degree at the University of Las Palmas de Gran Canaria.
 - [Ricardo Cárdenes](https://github.com/ricardocardn)
 - [Susana Suárez](https://github.com/susanasrez)
