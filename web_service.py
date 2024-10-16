@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify
 from data_loader import LoaderFactory
-from replication import Replication
-from dna import DNA
+from replication.replication import Replication
+from replication.dna import DNA
 
 
 app = Flask(__name__)
